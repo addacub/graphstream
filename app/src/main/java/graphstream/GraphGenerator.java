@@ -98,7 +98,7 @@ public class GraphGenerator {
         int L1_counter = 0;
         int L2_counter = 0;
         int L3_counter = 0;
-        List<Integer> node_list = new ArrayList<>(Arrays.asList(1, 3, 4, 6, 7, 9, 10));
+        List<Integer> node_list = new ArrayList<>(Arrays.asList(1, 3, 4, 5, 7, 8));
 
         String just_visited_classes;
 
@@ -118,7 +118,7 @@ public class GraphGenerator {
             Node visiting = k.next();
             String visiting_classes = (String) visiting.getAttribute("ui.class");
 
-            // Record level type of node
+            // Record level type of node being visited.
             just_visited_level = extract_level(visiting_classes);
             if (just_visited_level == 1) {
                 L1_counter += 1;

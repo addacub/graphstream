@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
         GraphGenerator graphGenerator = new GraphGenerator("Tree-Diagram",
-                new int[] { 2, 4, 10, 13, 0 });
+                new int[] { 2, 4, 8, 8, 0 });
         graphGenerator.generate();
         // graphGenerator.display();
         // graphGenerator.find_solutions();

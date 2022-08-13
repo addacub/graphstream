@@ -9,7 +9,7 @@
 #  mencoder "mf://$PREFIX*.$EXT" -mf fps=$FPS:type=$EXT -ovc lavc -lavcopts $OPT -o $OUTPUT -nosound -vf scale
 
 PREFIX="/home/cubea/Documents/repos/java/graphstream/app/images/treeGraph_%6d.png"
-FPS=2
+FPS=1
 OUTPUT="/home/cubea/Documents/repos/java/graphstream/app/src/main/resources/graphstreamMovie.mp4"
 OUTPUT_FPS=30
 CONV_OUTPUT="/home/cubea/Documents/repos/java/graphstream/app/src/main/resources/graphstreamMovie.webm"
