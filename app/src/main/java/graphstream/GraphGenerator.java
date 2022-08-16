@@ -61,7 +61,7 @@ public class GraphGenerator {
     public void generate() {
         new NodeExtended(null, 0, 0, graph);
 
-        String prefix = "images/treeGraph_";
+        String prefix = "/home/cubea/Documents/repos/java/graphstream/images/treeGraph_";
 
         try {
             fsi.begin(prefix);
