@@ -6,7 +6,7 @@ OUTPUT_MKV="/home/cubea/Documents/repos/java/graphstream/videos/graphstreamMovie
 CONV_TO_WEBM="/home/cubea/Documents/repos/java/graphstream/videos/graphstreamMovie.webm"
 CONV_TO_MP4="/home/cubea/Documents/repos/java/graphstream/videos/graphstreamMovie.mp4"
 
-ffmpeg -framerate $FPS -i $PREFIX  -c:v libx264 $OUTPUT_MKV
+ffmpeg -framerate $FPS -i $PREFIX  -c:v libx264 -vf format=yuv420p $OUTPUT_MKV
 ffmpeg -i $OUTPUT_MKV $CONV_TO_WEBM
 ffmpeg -i $OUTPUT_MKV $CONV_TO_MP4
 
